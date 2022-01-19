@@ -1,0 +1,75 @@
+<div class="section">
+    <h1>WE ENSURE A BETTER EDUCATION <br> FOR A BETTER WORLD</h1>
+    <p>ULAB is a leader among private universities in Bangladesh. Our vision is to transform education in the country, as well as in the region. Our exclusive partnerships with universities, NGOs, GOs, and research organizations support us in bringing world-class education to students.</p>
+   
+    <% if(user) { %>
+        <a href="/" ><button class="apply">Get Started</button></a>
+      <% } else { %>
+        <a href="/registration" ><button class="apply">Do Registration</button></a>
+      <%} %>
+<!--FEATURES-->
+   <div class="features">
+       <button>Learn Online Classes</button>
+       <button>Bridge Courses</button>
+       <button>Huge Library</button>
+       <button>Practical Exposure</button>
+   </div>
+<!--END OF FEATURES-->
+</div>
+<!--END OF SECTION-->
+</div>
+<!--END OF WRAPPER-->
+
+<!--SHOWCASE-->
+<showcase>
+ <h1>POPULAR COURSES WE OFFER</h1>
+ <div id="courses">
+     <div class="cs">
+         <h3>Computer Science</h3>
+         <img src="/img/cse.jpeg" width="50%" alt="cs">
+         <% if(user) { %>
+           <a href="https://cse.ulab.edu.bd/" ><button class="apply">Apply Here</button></a>
+         <% } else { %>
+           <a href="/registration" ><button class="apply">Do Registration</button></a>
+         <%} %>
+     </div>
+     <div class="business">
+         <h3>Business Studies</h3>
+         <img src="/img/business.jpeg" alt="business">
+         <% if(user) { %>
+           <a href="https://usb.ulab.edu.bd/bba/" ><button class="apply">Apply Here</button></a> 
+         <% } else { %>
+           <a href="/registration" ><button class="apply">Do Registration</button></a>
+         <%} %>
+
+     </div>
+     <div class="journalism">
+         <h3>Media & Journalism</h3>
+         <img src="/img/journalism.jpeg" alt="media">
+         <% if(user) { %>
+           <a href="https://msj.ulab.edu.bd/" ><button class="apply">Apply Here</button></a>
+         <% } else { %>
+           <a href="/registration" ><button class="apply">Do Registration</button></a>
+         <%} %>
+     </div>
+     <div class="arts">
+         <h3>English & Humanities</h3>
+         <img src="/img/arts.jpeg" alt="arts">
+         <% if(user) { %>
+           <a href="https://deh.ulab.edu.bd/" ><button class="apply">Apply Here</button></a>
+         <% } else { %>
+           <a href="/registration" ><button class="apply">Do Registration</button></a>
+         <%} %>
+     </div>
+     <div class="medical">
+         <h3>Electrical & Electronics</h3>
+         <img src="/img/eee.jfif" height="135px" alt="ms">
+         <% if(user) { %>
+           <a href="https://eee.ulab.edu.bd/" ><button class="apply">Apply Here</button></a>
+         <% } else { %>
+           <a href="/registration" ><button class="apply">Do Registration</button></a>
+         <%} %>
+     </div>
+ </div>
+</showcase>
+<!--END OF SHOWCASE-->

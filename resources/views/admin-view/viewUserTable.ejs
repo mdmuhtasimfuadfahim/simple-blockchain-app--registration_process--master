@@ -1,0 +1,55 @@
+
+
+<div class="limiter">
+    <div class="container-table100">
+        <div class="wrap-table100">
+
+            <div class="table100 ver5 m-b-110">
+                <table data-vertable="ver5">
+                    <thead>
+                        <tr class="row100 head">
+                            <th class="column100 column1" data-column="column1">Image</th>
+                            <th class="column100 column1" data-column="column1">Name</th>
+                            <th class="column100 column2" data-column="column2">University ID</th>
+                            <th class="column100 column3" data-column="column3">Block Number</th>
+                            <th class="column100 column4" data-column="column4">Block Hash</th>
+                            <th class="column100 column5" data-column="column5">Address</th>
+                            <th class="column100 column6" data-column="column6">Contact</th>
+                            <th class="column100 column7" data-column="column7">Gas Used</th>
+                            <th class="column100 column8" data-column="column8">Transaction Hash</th>
+                            <th class="column100 column8" data-column="column8">Transaction Status</th>
+                            <th class="column100 column8" data-column="column8">Registration Time</th>
+                            <th class="column100 column8" data-column="column8">Registration Date</th>
+                        </tr>
+                    </thead>
+                     
+                    <tbody>
+                    <% if(users.length){%>
+                      <% users.forEach(function(users) { %> 
+                        <tr class="row100">
+                            <td class="column100 column1" data-column="column1"><img style="border-radius: 5px; height:70px; width: 55px;" src="<%= users.userID.image %>" alt="image"></></td>
+                            <td class="column100 column1" data-column="column1"><%= users.userID.name %></td>
+                            <td class="column100 column2" data-column="column2"><%= users.userID.uni_id %></td>
+                            <td class="column100 column3" data-column="column3"><%= users.blockNumber %></td>
+                            <td class="column100 column4" data-column="column4"><%= users.blockHash %></td>
+                            <td class="column100 column5" data-column="column5"><%= users.userID.address %></td>
+                            <td class="column100 column6" data-column="column6"><%= users.userID.contact %></td>
+                            <td class="column100 column7" data-column="column7"><%= users.gasUsed %></td>
+                            <td class="column100 column8" data-column="column8"><%= users.transactionHash %></td>
+                            <td class="column100 column8" data-column="column8"><%= users.status %></td>
+                            <td class="column100 column8" data-column="column8"><%= moment(users.createdAt).format("hh:mmA") %></td>
+                            <td class="column100 column8" data-column="column8"><%= moment(users.createdAt).format("DD/MM/YYYY") %></td>
+                        </tr>
+                      <% }) %>
+                    <% }else{ %>
+                        <tr class="row100">
+                            <td class="column100 column8" data-column="column8">No Users Found</td>
+                        </tr>    
+                    </tbody>
+                    <% } %>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>

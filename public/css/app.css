@@ -1,0 +1,410 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap);
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,600);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container form {
+  padding: 20px;
+  width: 700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container form .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.container form .row .col {
+  flex: 1 1 250px;
+}
+
+.container form .row .col .title {
+  font-size: 20px;
+  color: #333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container form .row .col .inputBox {
+  margin: 15px 0;
+}
+
+.container form .row .col .inputBox span {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container form .row .col .inputBox input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus {
+  border: 1px solid #000;
+}
+
+.container form .row .col .flex {
+  display: flex;
+  gap: 15px;
+}
+
+.container form .row .col .flex .inputBox {
+  margin-top: 5px;
+}
+
+.container form .row .col .inputBox img {
+  height: 25px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.container form .submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 17px;
+  background: #27ae60;
+  color: #fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.container form .submit-btn:hover {
+  background: #2ecc71;
+}
+
+.wrapper {
+  background: url("/img/school.jpeg") no-repeat center center;
+  min-height: 30rem;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  background-color: #0005;
+  line-height: 80px;
+}
+
+nav ul {
+  float: right;
+  margin: 0;
+  margin-right: 1.9rem;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 20px;
+}
+
+img {
+  width: 14%;
+  margin-left: 1.9rem;
+  margin-top: 1%;
+}
+
+nav ul li:hover {
+  background-color: coral;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.section {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 4%;
+}
+
+.section h1 {
+  color: #fff;
+  line-height: 50px;
+}
+
+.section p {
+  color: gray;
+}
+
+.btn-1 {
+  background-color: orangered;
+  padding: 0.7rem 1rem;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+.features {
+  margin-top: 4%;
+  margin-bottom: 2%;
+}
+
+.features button {
+  padding: 0.7rem 2rem;
+  margin-right: 2rem;
+  font-size: 1.2rem;
+  opacity: 0.7;
+}
+
+showcase h1 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+#courses {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#courses img {
+  width: 200px;
+  border-radius: 10px;
+  border: 2px solid #000;
+  margin: auto;
+}
+
+.apply {
+  margin-top: 4%;
+  background-color: orangered;
+  padding: 0.7rem 1rem;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: 4%;
+}
+
+.section-title h2 {
+  text-transform: uppercase;
+}
+
+.section-title {
+  margin: 3% 0;
+}
+
+.section-title p {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.single-team {
+  padding-bottom: 70px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: 5px 5px 15px #000;
+}
+
+.team-img {
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.team-img img {
+  width: 400px;
+  height: 250px;
+  transition: 0.3s;
+}
+
+.single-team:hover .team-img img {
+  transform: scale(1.1);
+}
+
+.team-content {
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  overflow: hidden;
+  bottom: 0;
+  transition: all 0.4s;
+  background: tomato;
+  z-index: 5;
+}
+
+.single-team:hover .team-content {
+  height: 150px;
+}
+
+.team-info {
+  padding: 5px 20px 5px 20px;
+  transition: all 0.5s;
+}
+
+.single-team:hover .team-content {
+  background: #000;
+}
+
+.single-team .team-content .team-info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.single-team:hover .team-info h3 {
+  color: tomato;
+}
+
+.team-info p {
+  margin-top: 15px;
+  color: #fff;
+}
+
+.single-team-text p {
+  margin-top: 5px;
+}
+
+.team-text {
+  color: #fff;
+  padding: 0 10px 5px;
+}
+
+/* ignore the code below */
+.link-area {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 15px;
+  border-radius: 40px;
+  background: tomato;
+  z-index: 10;
+}
+
+.link-area a {
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.limiter {
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container-table100 {
+  width: 100%;
+  padding: 33px 30px;
+}
+
+.wrap-table100 {
+  width: 1300px;
+}
+
+table {
+  width: 100%;
+  background-color: transparent;
+  text-align: center;
+}
+
+th, td {
+  text-align: center;
+  background-color: whitesmoke;
+  font-weight: unset;
+  padding-right: 10px;
+  color: black;
+}
+
+.table100.ver5 tbody tr:nth-child(even) {
+  background-color: #e9faff;
+}
+
+.table100.ver5 td {
+  font-family: Montserrat-Regular;
+  font-size: 20px;
+  color: #808080;
+  line-height: 1.4;
+  position: relative;
+}
+
+.table100.ver5 th {
+  font-family: Montserrat-Medium;
+  font-size: 22px;
+  color: #fff;
+  line-height: 1.4;
+  text-transform: uppercase;
+  background-color: #002933;
+}
+
+.table100.ver5 .row100:hover td {
+  color: #fe3e64;
+}
+
+.table100.ver5 .hov-column-ver5 {
+  color: #fe3e64;
+}
+
+.table100.ver5 .hov-column-ver5::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  border-left: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+}
+
+.table100.ver5 .hov-column-head-ver5 {
+  background-color: #1a3f48 !important;
+  color: #fe3e64;
+}
+
+.table100.ver5 .row100 td:hover {
+  color: #fe3e64;
+}
+
+.table100.ver5 .row100 td:hover:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  border: 1px solid #fe3e64;
+}
+
+/*THE END*/

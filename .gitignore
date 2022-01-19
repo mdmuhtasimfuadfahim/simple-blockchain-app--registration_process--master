@@ -1,0 +1,5 @@
+node_modules/
+.env
+database credentials.txt
+yarn.lock
+yarn-error.log

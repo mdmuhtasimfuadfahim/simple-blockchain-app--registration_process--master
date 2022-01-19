@@ -1,0 +1,35 @@
+<div class="container">
+
+    <form action="/post-login" method="POST">
+        <% if(messages.error) { %>
+            <span style="color: red;"><%= messages.error %></span>
+         <% }else{ %>
+           <span style="color: red;"><%= messages.success %></span>
+         <% } %>
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">personal email</h3>
+
+                <div class="inputBox">
+                    <input name="email" type="email" placeholder="example@gmail.com">
+                </div> 
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">password</h3>
+
+                <div class="inputBox">
+                    <input name="password" type="password" placeholder="****************">
+                </div>
+            </div>
+    
+        </div>
+
+        <button type="submit" class="submit-btn">Login</button>
+
+    </form>
+
+</div>    

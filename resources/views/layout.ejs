@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Computation Website</title>
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+   
+   <div class="wrapper">
+
+<!--NAVIGATION-->
+       <nav>
+          <img src="/img/ULAB-logo.png" class="img" alt="logo"> 
+          <ul>
+              <li><a href="/">HOME</a></li>
+              <% if(user) { %>
+                  <% if(user.role != 'Student'){ %>
+                  <li><a href="/admin/user-list">USERS</a></li>
+                  <li><a href="/admin/user-table-blockchain">BLOCKCHAIN</a></li>
+                  <% } %>
+              <% } %> 
+              <% if(user) { %>
+               <li>
+               <form id="logout" action="/logout" method="POST">
+                  <li class="ml-4"><a onclick="document.getElementById('logout').submit()" href="#">LOGOUT</a></li>
+              </form></li>
+              <% } else { %>
+               <li><a href="/login">LOGIN</a></li>
+               <li><a href="/registration">REGISTRATION</a></li>
+              <% } %>
+              
+          </ul>
+       </nav>
+<!--END OF NAVIGATION-->
+   
+<!--BODY SECTION-->
+
+   <%- body %>
+<!--END BODY SECTION-->
+
+
+   <script text="javascript" src="/js/app.js"></script>
+
+   
+   <footer>
+       <p>Copyright &copy; 2021, Basic of Blockchain Computation</p>
+   </footer>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

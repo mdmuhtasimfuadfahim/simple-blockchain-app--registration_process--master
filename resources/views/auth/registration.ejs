@@ -1,0 +1,67 @@
+<div class="container">
+
+    <form action="/post-registration" method="POST" enctype="multipart/form-data">
+        <% if(messages.error) { %>
+           <span style="color: red;"><%= messages.error %></span>
+        <% }else{ %>
+          <span style="color: red;"><%= messages.success %></span>
+        <% } %>
+
+        <div class="row">
+
+            <div class="col">
+                <h3 class="title">university credentials</h3>
+
+                <div class="inputBox">
+                    <span>name :</span>
+                    <input name="name" type="text" placeholder="Md. Muhtasim Fuad Fahim">
+                </div>
+                <div class="inputBox">
+                    <span>university id :</span>
+                    <input name="uni_id" type="text" placeholder="171014051">
+                </div>
+
+                <div class="inputBox">
+                    <span>password :</span>
+                    <input name="password" type="password" placeholder="****************">
+                </div>
+
+                <div class="inputBox">
+                    <span>date of birth :</span>
+                    <input name="dob" type="date" placeholder="">
+                </div>
+
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">personal info</h3>
+
+                <div class="inputBox">
+                    <span>your picture :</span>
+                    <input name="image" type="file" >
+                </div> 
+
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input name="email" type="email" placeholder="example@gmail.com">
+                </div> 
+
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input name="address" type="text" placeholder="street - locality">
+                </div>
+                <div class="inputBox">
+                    <span>contact :</span>
+                    <input name="contact" type="text" placeholder="+880 1*********">
+                </div>
+            </div>
+    
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Form</button>
+
+    </form>
+
+</div>    

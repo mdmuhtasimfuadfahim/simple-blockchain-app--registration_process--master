@@ -1,0 +1,39 @@
+ 
+  <div class="team-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title text-center">
+            <h2>ULABians</h2>
+            <p>Meet Our Talented Trainees</p>
+          </div>
+        </div>
+  
+        <% user.forEach(function(user) { %>
+        <!-- Single Team Item -->
+        <div class="col-md-3">
+          <div class="single-team">
+            <div class="team-img">
+              <img src="<%= user.image %>" alt="" class="img-responsive">
+            </div>
+            <div class="team-content">
+              <div class="team-info">
+                <h3><%= user.name %></h3>
+                <p><%= user.uni_id %></p>
+              </div>
+              <p class="team-text"><%= user.contact %></p>
+              <p class="team-text"><%= user.email %></p>
+              <p class="team-text"><%= user.address %></p>
+            </div>
+          </div>
+        </div>
+        <!-- Single Team Item -->
+        <% }) %>
+
+
+      </div>
+    </div>
+  </div>
+  
+  
+        
